@@ -1,0 +1,19 @@
+Se asume que se conocen los fundamentos de bases de datos, esto no es algo 
+trivial, pero a veces el problema es que se piensa que se sabe más de lo 
+que actualmente se hace. Por ejemplo "¿Qué es una base de datos?". Se 
+puede apostar que la mayoría de las personas que leen esto creen que saben 
+la respuesta a esa pregunta. Pero algunos (quizás muchos) de ustedes 
+estarían equivocados. SQL Server no es una base de datos; Es un sistema de 
+gestión de bases de datos o DBMS. Se puede usar SQL Server para crear una 
+base de datos, pero SQL Server, en sí mismo, no es una base de datos.
+
+Entonces, ¿qué es una base de datos? Una base de datos es un almacén de 
+datos organizado en el que los datos son accesibles por elementos de datos 
+nombrados (por ejemplo, campos, registros y archivos).
+
+Un DBMS es un software que permite a los usuarios finales o programadores 
+de aplicaciones compartir datos. Proporciona un método sistemático para 
+crear, actualizar, recuperar y almacenar información en una base de datos. 
+Los DBMS también son generalmente responsables de la integridad de los 
+datos, la seguridad de los datos, el control y la optimización del acceso 
+a los datos, la reversión automática, el reinicio y la recuperación.
