@@ -5,6 +5,8 @@
 //  Created by Usuario invitado on 06/02/24.
 //
 // ejemplo1.c: Muestra un fichero dos veces.
+
+//Simular el programa o aplicación cat de UNIX’LIKE quote> ENVIANDOLE en la linea de comandos el archivo a mostrar en pantalla
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -12,7 +14,7 @@
 
 #define MAX_PATH_LENGTH 256
 
-int main()
+int main(int argc, char **argv)
 {
     char file_path[MAX_PATH_LENGTH];
     FILE *fichero;

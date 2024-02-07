@@ -1,0 +1,12 @@
+TABLA DE SIMBOLOS.
+
+Una tabla de símbolos es una colección de símbolos y sus atributos.
+Por simplicidad supondremos que un símbolo será representado por una cadena y un atributo entero.
+Una forma de implementar una tabla de símbolos es usar la técnica de dispersión (Hash -modulo-) y un enlace. La tabla consta de n espacios ( 0 a n-1). Se aplica la función Hash a cada símbolo para decidir en cual espacio debe almacenarse. Los símbolos que tengan la misma dirección de dispersión se almacenan en el mismo espacio y se arreglan como lista enlazada.
+Se representa cada símbolo mediante una estructura (struct),
+con su nombre, su valor y un apuntador al siguiente símbolo.
+En el método Hash se suman los códigos de los caracteres de un nombre y se regresa el residuo de la división de dicha suma entre el tamaño (size o tam). Esto garantiza que una dirección de dispersión (hash) este siempre en el rango de 0 .. tam-1.
+Al crear una nueva entrada para un símbolo (Método AddSym)se requiere que se pueda crear espacio para asignárselo a este. Se utiliza Hash para decidir el espacio donde se debe colocar el símbolo y luego insertar la entrada al frente de la lista enlazada denotada por ese espacio.
+Este método regresa un apuntador 0 (cero o NULL) cuando no se puede asignar espacio a un símbolo. Esto determina si la solicitud tuvo éxito.
+Para buscar un símbolo utilizaremos el método FindSym, si lo encuentra, regresa un apuntador a su entrada, en caso contrario regresa 0 (cero). 
+
