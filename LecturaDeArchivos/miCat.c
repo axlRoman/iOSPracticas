@@ -1,6 +1,6 @@
 // ejemplo1.c: Muestra un fichero dos veces.
 #include <stdio.h>
-
+#include <stdlib.h>
 int main(int argc, char *argv[])
 {
    FILE *fichero;
