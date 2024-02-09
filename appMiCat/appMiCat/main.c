@@ -14,7 +14,7 @@ int main(int argc, const char * argv[]) {
         printf("%s",argv[0]);
         if( (fichero = fopen(argv[1], "r")) == NULL)
         {
-            puts("E R R O R, Archivo no encontrado");
+            puts("\nE R R O R, Archivo no encontrado");
             exit(1);
         }
         
