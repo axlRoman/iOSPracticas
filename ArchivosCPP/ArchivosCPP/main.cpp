@@ -1,8 +1,9 @@
 //
 //  main.cpp
-//  appArchivoCPP
+//  ArchivosCPP
 //
-//  Created by Usuario invitado on 09/02/24.
+//  Created by Adriana Sofia on 11/02/24.
+//  Copyright © 2024 Francisco Axel. All rights reserved.
 //
 
 #include <iostream>
@@ -15,7 +16,7 @@ int main(int argc, const char * argv[]) {
     string archivo, path;
     cout <<"Archivo: ";
     getline(cin, archivo, '\n');
-    path = "/Users/adrianasofia/Desktop";
+    path = "/Users/adrianasofia/Desktop/";
     path += archivo;
     string cadena;
     ifstream datos(path);
