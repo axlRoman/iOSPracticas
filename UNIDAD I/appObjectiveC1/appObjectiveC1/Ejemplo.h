@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (int)min:(int)num1 andNum2:(int)num2;
 //AGREGAR UN METODO PARA DETERMINAR EL MAYOR DE TRES NUMEROS
 - (int)maxTres:(int)num1 andNum2:(int)num2 andNum3:(int)num3;
+
+-(int) mayorDe3:(int)num1 yN2:(int)num2 yN3:(int)num3;
 @end
 
 NS_ASSUME_NONNULL_END

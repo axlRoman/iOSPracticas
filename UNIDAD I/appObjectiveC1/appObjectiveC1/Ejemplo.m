@@ -47,4 +47,12 @@
 
     return result;
 }
+-(int) mayorDe3:(int)n1 yN2:(int)n2 yN3:(int)n3{
+    //this = self
+    int resultado = [self max:n1 andNum2:n2];
+//    resultado = [self max:resultado andNum2:n3];
+//    return resultado;
+    
+    return resultado = [self max:resultado andNum2:n3];
+}
 @end
