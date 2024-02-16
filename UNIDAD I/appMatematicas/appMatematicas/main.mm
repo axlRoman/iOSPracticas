@@ -32,6 +32,13 @@ int main(int argc, const char * argv[]) {
         NSNumber *r = [NSNumber numberWithFloat:0.0];
         [mate multiplyA:a withB:b yregresaR:r];
         NSLog(@"🤩The product is %@🐭",r);
+        
+        //IMPLEMENTAR UN METODO QUE REGRESE EL RESULTADO EN UN OBJETO NSNUMBER
+        //EN UNA VARIABLE double
+        //double resultado = 100;
+        double resultado;
+        [mate multiplyA_:a withB:b yregresaR:resultado];
+        NSLog(@"🤩The product is %.2f🐭",resultado);
     }
     return 0;
 }
