@@ -17,6 +17,11 @@ NS_ASSUME_NONNULL_BEGIN
 -(double)factorialR:(double)n;
 
 -(BOOL)esPrimo:(int)n;
+-(double)seno:(double)grados;
+-(double)coseno:(double)grados;
+-(double)tangente:(double)grados;
+
+-(double)radianesAGrados:(double)radianes;
 @end
 
 NS_ASSUME_NONNULL_END

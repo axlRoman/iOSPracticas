@@ -6,7 +6,7 @@
 //
 
 #import "Matematicas.h"
-
+//#import <math.h>
 @implementation Matematicas
 
 - (NSNumber *)multiplyA:(NSNumber *)a withB:(NSNumber *)b {
@@ -54,12 +54,30 @@
 }
 
 -(BOOL)esPrimo:(int)n{
-    if(n%n==1 && n%1==0)
-        return YES;
-    return NO;
+    int div=2;
+    while(div<n){
+        if(n%div)
+            return NO;
+        div++;
+    }
+    return YES;
 }
 
 //IMPLEMENTAR UNA CALCULADORA BASICA, LA APP DEBE SER INTERACTIVA
 //MOSTRANDO UN MENÚ PARA QUE EL USUARIO SELECCIONE LA OPCION
+
+//AGREGAR FUNCIONES TRIGONOMETRICAS
+-(double)seno:(double)grados{
+    return sin([self radianesAGrados:grados]);
+}
+-(double)coseno:(double)grados{
+    return cos([self radianesAGrados:grados]);
+}
+-(double)tangente:(double)grados{
+    return tan([self radianesAGrados:grados]);
+}
+-(double)radianesAGrados:(double)radianes{
+    return radianes * M_PI/180;
+}
 
 @end
