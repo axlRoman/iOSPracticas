@@ -23,12 +23,13 @@ NS_ASSUME_NONNULL_BEGIN
 -init; //INICIALIZADOR O CONSTRUCTOR
 -(NSInteger)x; //PROPIEDAD getter, se puede llamar igual que el atributo
 -(void) setX:(NSInteger)paramX;
--(void) setX:(NSInteger)paramX yY:(NSInteger)paramY;
+//No es necesario colocar 
+-(void) setX:(NSInteger)paramX :(NSInteger)paramY;
 -(void) setX:(NSInteger)paramX incrementar:(NSInteger)paramSumar;
 
 -(NSInteger)y;
 -(void) setY:(NSInteger)paramY;
--(void) setY:(NSInteger)paramY yX:(NSInteger)paramX;
+-(void) setY:(NSInteger)paramY :(NSInteger)paramX;
 -(void) setY:(NSInteger)paramY incrementar:(NSInteger)paramSuman;
 
 //DEFINIR EL PROTOTIPO O FIRMA PARA EL METODO SUMAR 2PUNTOS
@@ -40,6 +41,10 @@ NS_ASSUME_NONNULL_BEGIN
 -(Punto *) sumar:(Punto *)p;
 //SUMA DE VARIOS PUNTOS, UTULIZANDO PARAMETROS VARIABLES
 +(Punto *) sumar:(NSInteger) n, ...;
+
+//DEFINA E IMPLEMENTE UN METODO PARA CALCULAR
+//LA DISTANCIA ENTRE DOS PUNTOS
+- (double)calcularDistancia:(Punto *)otroPunto;
 
 @end
 
