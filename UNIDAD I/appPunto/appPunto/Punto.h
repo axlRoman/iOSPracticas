@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Punto : NSObject
 {
-    //LOS ATRIBUTOS POR DEFAULT SON PRIVADOS
+    //LOS ATRIBUTOS POR DEFAULT SON PROTECTED
     NSInteger x;
     NSInteger y;
 }
@@ -44,7 +44,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 //DEFINA E IMPLEMENTE UN METODO PARA CALCULAR
 //LA DISTANCIA ENTRE DOS PUNTOS
-- (double)calcularDistancia:(Punto *)otroPunto;
+-(double)calcularDistanciaP:(Punto *)otroPunto;
+-(CGFloat)calcularDistancia:(Punto *)p;
 
 @end
 

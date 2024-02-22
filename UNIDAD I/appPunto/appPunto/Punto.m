@@ -84,10 +84,19 @@ static NSInteger nPuntos = 0;
     return aux;
 }
 
--(double)calcularDistancia:(Punto *)otroPunto{
+-(double)calcularDistanciaP:(Punto *)otroPunto{
     NSInteger calX = self.x - otroPunto.x;
     NSInteger calY = self.y - otroPunto.y;
     return sqrt(calX * calX + calY * calY);
 }
+
+-(CGFloat)calcularDistancia:(Punto *)p{
+//    CGFloat dist = sqrt(pow(p.x - self.x, 2.0) + pow(p.y - self.y, 2.0));
+//    return dist;
+    
+    return sqrt(pow(p.x - x, 2.0) + pow(p.y - y, 2.0));
+}
+
+
 
 @end
