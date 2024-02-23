@@ -56,6 +56,8 @@ int main(int argc, const char * argv[]) {
         NSLog(@"Puntos Creados :%ld", nPuntos);
         
         //AGREGAR CALCULAR DISTANCIA
+        CGFloat distancia  = [punto1 calcularDistancia:punto2];
+        NSLog(@"Distancia de %@ hasta %@ = %0.2f", punto1,punto2,distancia);
         
         //INVESTIGAR LAS PROPIEDADES DE ACCESO EN LAS CLASES OBJECTIVE-C
         //PROTECTED, PRIVATE, ETC...
