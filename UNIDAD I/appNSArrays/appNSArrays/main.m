@@ -9,33 +9,33 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        NSMutableArray *array;
-        array = [[NSMutableArray alloc] init];
-        int i;
-        for (i = 0; i < 10; i++)
-        {
-            NSNumber *newNumber = [[NSNumber alloc] initWithInt:(i * 3)];
-            [array addObject:newNumber];
-            array[i] = newNumber;
-        }
-        for ( i = 0; i < 10; i++) {
-            //NSNumber *numberToPrint = [array objectAtIndex:i];
-            //NSLog(@"The number at index %d is %@",  i, numberToPrint);
-            NSLog(@"The number at index %d is %@",  i, array[i]);
-        }
-        
-        NSNumber *num = [[NSNumber alloc]initWithInt:100];
-        [array addObject:num];
-        NSLog(@"Mostrar el ARREGLO SIN USAR CICLO");
-        NSLog(@"%@",array);
-        NSLog(@"Numero de elementos %lu",[array count]);
-        
-        NSNumber *n2 = [[NSNumber alloc]initWithInt:78];
-        [array insertObject:n2 atIndex:5];
-        
-        NSLog(@"Mostrar el ARREGLO SIN USAR CICLO");
-        NSLog(@"%@",array);
-        NSLog(@"Numero de elementos %lu",[array count]);
+//        NSMutableArray *array;
+//        array = [[NSMutableArray alloc] init];
+//        int i;
+//        for (i = 0; i < 10; i++)
+//        {
+//            NSNumber *newNumber = [[NSNumber alloc] initWithInt:(i * 3)];
+//            [array addObject:newNumber];
+//            array[i] = newNumber;
+//        }
+//        for ( i = 0; i < 10; i++) {
+//            //NSNumber *numberToPrint = [array objectAtIndex:i];
+//            //NSLog(@"The number at index %d is %@",  i, numberToPrint);
+//            NSLog(@"The number at index %d is %@",  i, array[i]);
+//        }
+//
+//        NSNumber *num = [[NSNumber alloc]initWithInt:100];
+//        [array addObject:num];
+//        NSLog(@"Mostrar el ARREGLO SIN USAR CICLO");
+//        NSLog(@"%@",array);
+//        NSLog(@"Numero de elementos %lu",[array count]);
+//
+//        NSNumber *n2 = [[NSNumber alloc]initWithInt:78];
+//        [array insertObject:n2 atIndex:5];
+//
+//        NSLog(@"Mostrar el ARREGLO SIN USAR CICLO");
+//        NSLog(@"%@",array);
+//        NSLog(@"Numero de elementos %lu",[array count]);
         
         // Recorre el arreglo original en orden inverso y agrega los elementos al nuevo arreglo
 //        NSMutableArray *arrayInvertido = [NSMutableArray arrayWithCapacity:[array count]];
@@ -56,11 +56,23 @@ int main(int argc, const char * argv[]) {
 //        NSLog(@"%@",array);
 //        NSLog(@"Numero de elementos %lu",[array count]);
 
-        NSMutableArray *vector = [[NSMutableArray alloc]init];
-        int ndatos = arc4random_uniform(6) + 5;
- 
+//        NSMutableArray *vector = [[NSMutableArray alloc]init];
+//        int ndatos = arc4random_uniform(6) + 5;
+
         //INSERTAR DATOS ALEATORIOS DE 3 DIGITOS
         //MOSTRAR CON for.. in
+        NSMutableArray *vector3Cifras = [[NSMutableArray alloc]init];
+        //int datos3Cifras = arc4random_uniform(900) + 100;
+        
+        for (int i = 0; i < 10; i++)
+        {
+            int datos3Cifras = arc4random_uniform(900) + 100;
+            [vector3Cifras addObject:@(datos3Cifras)]; // Agrega el número aleatorio al vector
+        }
+        
+        for (NSNumber *numero in vector3Cifras) {
+            NSLog(@"Numero 3 cifras: %@", numero);
+        }
         
         //investigar las propiedades de acceso en las clases objective-c
         //protected,private,etc
