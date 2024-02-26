@@ -57,26 +57,45 @@ int main(int argc, const char * argv[]) {
 //        NSLog(@"Numero de elementos %lu",[array count]);
 
 //        NSMutableArray *vector = [[NSMutableArray alloc]init];
-//        int ndatos = arc4random_uniform(6) + 5;
+        int ndatos = arc4random_uniform(6) + 5;
 
         //INSERTAR DATOS ALEATORIOS DE 3 DIGITOS
         //MOSTRAR CON for.. in
         NSMutableArray *vector3Cifras = [[NSMutableArray alloc]init];
         //int datos3Cifras = arc4random_uniform(900) + 100;
         
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < ndatos; i++)
         {
-            int datos3Cifras = arc4random_uniform(900) + 100;
-            [vector3Cifras addObject:@(datos3Cifras)]; // Agrega el número aleatorio al vector
+            NSNumber *numero = [[NSNumber alloc] initWithInt:arc4random_uniform(900) + 100];
+            vector3Cifras[i] = numero;
+            //int datos3Cifras = arc4random_uniform(900) + 100;
+            //[vector3Cifras addObject:@(datos3Cifras)]; // Agrega el número aleatorio al vector
         }
         
+        NSLog(@"UTILIZANDO for .. in");
+        int r =0;
         for (NSNumber *numero in vector3Cifras) {
-            NSLog(@"Numero 3 cifras: %@", numero);
+            NSLog(@"vec[%d] %@",r++, numero);
         }
         
         //investigar las propiedades de acceso en las clases objective-c
         //protected,private,etc
         
+        NSNumber *letraA = @'A'; // con el @antepuesto CONVERTIMOS A NSOBJECT
+                                 //EL ELEMENTO INDICADO
+        char letra = [letraA charValue];
+        NSLog(@"%@ = %c = %d", letraA, letra, letra);
+        
+        NSNumber *numero1NS = @35;
+        int num1 = numero1NS.intValue;
+        NSLog(@"%@ = %d", numero1NS, num1);
+        
+        //NSArray *vector2 = @[@4,@10,@69, @89, @56];
+        NSArray *vector2 = @[@65,@66,@97, @98, @48];
+        NSLog(@"%@",vector2);
+        
+        //EVALUACION CADENAS (NSSTRING) EN OBJECTIVE-C
+        //
     }
     return 0;
 }
