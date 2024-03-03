@@ -11,6 +11,7 @@
 		74AEF4AD2B8F8F060089A017 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74AEF4AC2B8F8F060089A017 /* Assets.xcassets */; };
 		74AEF4B02B8F8F060089A017 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74AEF4AE2B8F8F060089A017 /* MainMenu.xib */; };
 		74AEF4B22B8F8F060089A017 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AEF4B12B8F8F060089A017 /* main.m */; };
+		74AEF4BB2B90D9700089A017 /* NumerosAleatorios.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AEF4BA2B90D9700089A017 /* NumerosAleatorios.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,8 @@
 		74AEF4AF2B8F8F060089A017 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		74AEF4B12B8F8F060089A017 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		74AEF4B32B8F8F060089A017 /* appNumerosAleatorios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = appNumerosAleatorios.entitlements; sourceTree = "<group>"; };
+		74AEF4B92B90D9700089A017 /* NumerosAleatorios.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NumerosAleatorios.h; sourceTree = "<group>"; };
+		74AEF4BA2B90D9700089A017 /* NumerosAleatorios.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NumerosAleatorios.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +60,8 @@
 				74AEF4AA2B8F8F020089A017 /* AppDelegate.m */,
 				74AEF4AC2B8F8F060089A017 /* Assets.xcassets */,
 				74AEF4AE2B8F8F060089A017 /* MainMenu.xib */,
+				74AEF4B92B90D9700089A017 /* NumerosAleatorios.h */,
+				74AEF4BA2B90D9700089A017 /* NumerosAleatorios.m */,
 				74AEF4B12B8F8F060089A017 /* main.m */,
 				74AEF4B32B8F8F060089A017 /* appNumerosAleatorios.entitlements */,
 			);
@@ -132,6 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74AEF4BB2B90D9700089A017 /* NumerosAleatorios.m in Sources */,
 				74AEF4B22B8F8F060089A017 /* main.m in Sources */,
 				74AEF4AB2B8F8F020089A017 /* AppDelegate.m in Sources */,
 			);
