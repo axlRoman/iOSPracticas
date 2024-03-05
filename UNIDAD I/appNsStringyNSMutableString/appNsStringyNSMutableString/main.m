@@ -90,6 +90,34 @@ int main(int argc, const char * argv[]) {
         [cadAux1 deleteCharactersInRange:[cadAux1 rangeOfString:@"DE LA "]];
         NSLog(@"cadAux1 borrando \"DE LA\" = %@",cadAux1);
         
+        //EJEMPLOS SUBCADENAS
+        NSString *cadAux2;
+        cadAux2 = [cadAux1 substringWithRange:NSMakeRange(10, 11)];
+        NSLog(@"SUBCADENA 2 = %@",cadAux2);
+        //HASTA
+        cadAux2 = [cadAux1 substringToIndex:21];
+        NSLog(@"SUBCADENA 2 = %@", cadAux2);
+        //DESDE
+        cadAux2 = [cadAux1 substringFromIndex:21];
+        NSLog(@"SUBCADENA 2 = %@",cadAux2);
+        
+        NSMutableString *cadaux3 = [NSMutableString stringWithString:@"INSTITUTO"];
+        NSMutableString *cadaux4 = [NSMutableString stringWithString:@"TECNOLOGICO DE LA LAGUNA, Torreon, Coah. MX"];
+        
+//        NSString *cadaux5 = [[NSString alloc]initWithFormat:@"%@%@",cadaux3,cadaux4];
+        NSString *cadaux5 = [[NSString alloc]initWithFormat:@"%@%@",cadaux3,cadaux4];
+        NSLog(@"CADENAS CONCATENADAS: %@\n\a\a", cadaux5);
+        
+        //EVALUACION
+        //INVERTIR LA CADENA cadaux5 Y ASIGNARLA A OTRA CADENA
+        
+        NSMutableString *cadaux5Invertida = [NSMutableString stringWithCapacity:[cadaux5 length]];
+        for (NSInteger i = [cadaux5 length] - 1; i >= 0; i--) {
+            [cadaux5Invertida appendString:[NSString stringWithFormat:@"%C", [cadaux5 characterAtIndex:i]]];
+        }
+        NSLog(@"CADENA INVERTIDA: %@", cadaux5Invertida);
+            
+        
         
         
         /*
