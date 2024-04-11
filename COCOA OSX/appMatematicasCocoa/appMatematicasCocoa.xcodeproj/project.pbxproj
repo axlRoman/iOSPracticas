@@ -12,6 +12,7 @@
 		745E21622B9777320095B886 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 745E21602B9777320095B886 /* MainMenu.xib */; };
 		745E21642B9777320095B886 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 745E21632B9777320095B886 /* main.m */; };
 		745E216D2B9779C80095B886 /* Matematicas.m in Sources */ = {isa = PBXBuildFile; fileRef = 745E216C2B9779C70095B886 /* Matematicas.m */; };
+		745E21702B98C41F0095B886 /* CocoaMatematicas.m in Sources */ = {isa = PBXBuildFile; fileRef = 745E216F2B98C41F0095B886 /* CocoaMatematicas.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		745E21652B9777320095B886 /* appMatematicasCocoa.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = appMatematicasCocoa.entitlements; sourceTree = "<group>"; };
 		745E216B2B9779C70095B886 /* Matematicas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Matematicas.h; path = "../../../UNIDAD I/appMatematicas/appMatematicas/Matematicas.h"; sourceTree = "<group>"; };
 		745E216C2B9779C70095B886 /* Matematicas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Matematicas.m; path = "../../../UNIDAD I/appMatematicas/appMatematicas/Matematicas.m"; sourceTree = "<group>"; };
+		745E216E2B98C41F0095B886 /* CocoaMatematicas.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaMatematicas.h; sourceTree = "<group>"; };
+		745E216F2B98C41F0095B886 /* CocoaMatematicas.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaMatematicas.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				745E21602B9777320095B886 /* MainMenu.xib */,
 				745E21632B9777320095B886 /* main.m */,
 				745E21652B9777320095B886 /* appMatematicasCocoa.entitlements */,
+				745E216E2B98C41F0095B886 /* CocoaMatematicas.h */,
+				745E216F2B98C41F0095B886 /* CocoaMatematicas.m */,
 				745E216B2B9779C70095B886 /* Matematicas.h */,
 				745E216C2B9779C70095B886 /* Matematicas.m */,
 			);
@@ -140,6 +145,7 @@
 				745E216D2B9779C80095B886 /* Matematicas.m in Sources */,
 				745E21642B9777320095B886 /* main.m in Sources */,
 				745E215D2B97772C0095B886 /* AppDelegate.m in Sources */,
+				745E21702B98C41F0095B886 /* CocoaMatematicas.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

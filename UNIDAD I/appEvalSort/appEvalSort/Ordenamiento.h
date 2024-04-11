@@ -11,7 +11,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Ordenamiento : NSObject
 
-+ (NSArray *)metodoDeOrdenamiento:(NSArray *)vector;
++ (NSArray *)metodoBurbuja:(NSArray *)vector;
++ (NSArray *)sort2:(NSArray *)unsortedArray;
++ (NSArray *)insertionSort:(NSArray *)unsortedArray;
 
 @end
 

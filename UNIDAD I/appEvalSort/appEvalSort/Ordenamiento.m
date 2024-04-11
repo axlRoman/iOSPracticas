@@ -9,7 +9,7 @@
 
 @implementation Ordenamiento
 
-+ (NSArray *)metodoDeOrdenamiento:(NSArray *)vector {
++ (NSArray *)metodoBurbuja:(NSArray *)vector {
     int comp, interc;
     comp = interc = 0;
     
@@ -32,5 +32,65 @@
     
     return [vecAux copy];
 }
+
++ (NSArray *)sort2:(NSArray *)unsortedArray {
+    int count = (int)[unsortedArray count];
+    if (count <= 1) {
+        return unsortedArray;
+    }
+    
+    int pivot = [[unsortedArray objectAtIndex: (count/2)] intValue];
+    NSMutableArray *smallerThanArray = [NSMutableArray array];
+    NSMutableArray *largerThanArray = [NSMutableArray array];
+    NSMutableArray *pivotArray = [NSMutableArray array];
+    [pivotArray addObject: @(pivot)];
+    
+    for (int e = 0; e < count; e++) {
+        int num = [[unsortedArray objectAtIndex:e] intValue];
+        
+        if (num < pivot) {
+            [smallerThanArray addObject: @(num)];
+        }
+        else if (num > pivot) {
+            [largerThanArray addObject: @(num)];
+        }
+        else if (e != (count/2) && pivot == num) {
+            [pivotArray addObject: @(num)];
+        }
+    }
+ 
+    NSMutableArray *returnArray = [NSMutableArray array];
+    [returnArray addObjectsFromArray: [self sort2: smallerThanArray]];
+    [returnArray addObjectsFromArray: pivotArray];
+    [returnArray addObjectsFromArray: [self sort2: largerThanArray]];
+ 
+    return returnArray;
+}
++ (NSArray *)insertionSort:(NSArray *)unsortedArray {
+    NSMutableArray *sortedArray = [unsortedArray mutableCopy];
+    int comp = 0;
+    int inter = 0;
+    
+    for (NSUInteger i = 1; i < [sortedArray count]; i++) {
+        id key = sortedArray[i];
+        NSInteger j = i - 1;
+        
+        while (j >= 0 && [sortedArray[j] compare:key] == NSOrderedDescending) {
+            sortedArray[j + 1] = sortedArray[j];
+            j--;
+            comp++;
+            inter++;
+        }
+        
+        sortedArray[j + 1] = key;
+        inter++;
+    }
+    
+    NSLog(@"No. de Comparaciones = %d", comp);
+    NSLog(@"No. de Intercambios  = %d", inter);
+    
+    return [sortedArray copy];
+}
+
 
 @end

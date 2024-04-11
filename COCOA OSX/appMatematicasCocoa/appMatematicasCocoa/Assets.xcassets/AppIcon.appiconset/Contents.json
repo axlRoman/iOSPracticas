@@ -11,6 +11,7 @@
       "size" : "16x16"
     },
     {
+      "filename" : "1.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "32x32"
@@ -36,6 +37,7 @@
       "size" : "256x256"
     },
     {
+      "filename" : "TIENDAFLOTANTE .png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "256x256"

@@ -9,6 +9,42 @@
 //#import <math.h>
 @implementation Matematicas
 
+// SUMA
+-(NSNumber *)suma:(NSNumber *)num1 mas:(NSNumber *)num2 {
+    double n1 = [ num1 doubleValue ];
+    double n2 = [ num2 doubleValue ];
+    double suma = n1 + n2;
+    NSNumber *resultado = [NSNumber numberWithDouble:suma];
+    return resultado;
+}
+
+// RESTA
+-(NSNumber *)resta:(NSNumber *)num1 menos:(NSNumber *)num2 {
+    double n1 = [ num1 doubleValue ];
+    double n2 = [ num2 doubleValue ];
+    double resta = n1 - n2;
+    NSNumber *resultado = [NSNumber numberWithDouble:resta];
+    return resultado;
+}
+
+// MULTIPLICACION
+-(NSNumber *)multiplica:(NSNumber *)num1 por:(NSNumber *)num2 {
+    double n1 = [ num1 doubleValue ];
+    double n2 = [ num2 doubleValue ];
+    double mult = n1 * n2;
+    NSNumber *resultado = [NSNumber numberWithDouble:mult];
+    return resultado;
+}
+
+// DIVISION
+-(NSNumber *)divide:(NSNumber *)num1 entre:(NSNumber *)num2 {
+    double n1 = [ num1 doubleValue ];
+    double n2 = [ num2 doubleValue ];
+    double division = n1 / n2;
+    NSNumber *resultado = [NSNumber numberWithDouble:division];
+    return resultado;
+}
+
 - (NSNumber *)multiplyA:(NSNumber *)a withB:(NSNumber *)b {
     float number1 = [a floatValue];
     float number2 = [b floatValue];
