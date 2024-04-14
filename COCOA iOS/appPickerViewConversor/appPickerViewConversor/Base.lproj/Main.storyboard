@@ -43,7 +43,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="evs-FI-Ecf">
-                                <rect key="frame" x="0.0" y="265" width="393" height="216"/>
+                                <rect key="frame" x="0.0" y="264.66666666666669" width="393" height="216.33333333333331"/>
                             </pickerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -68,6 +68,11 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="evs-FI-Ecf" secondAttribute="bottom" constant="337" id="yFv-pY-bFX"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cantidadDolares" destination="nvu-Ta-GUX" id="NBz-Yx-aRT"/>
+                        <outlet property="etiqResultado" destination="ZdH-r7-CBj" id="ZvD-vy-4lI"/>
+                        <outlet property="pickerPaises" destination="evs-FI-Ecf" id="SGO-7P-84m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

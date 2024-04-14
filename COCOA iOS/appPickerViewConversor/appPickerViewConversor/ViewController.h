@@ -9,6 +9,14 @@
 
 @interface ViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
 
+{
+    
+}
+@property (weak, nonatomic) IBOutlet UITextField *cantidadDolares;
+@property (weak, nonatomic) IBOutlet UILabel *etiqResultado;
+@property (weak, nonatomic) IBOutlet UIPickerView *pickerPaises;
+
+@property (strong, nonatomic) NSArray*tipoDeCambio;
 
 @end
 

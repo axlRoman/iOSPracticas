@@ -13,41 +13,32 @@ int main(int argc, const char * argv[]) {
         
         NSString *string1 = @"NIÑOS y niñas, atentos a la siguiente informacion: el 9 de abril del 2024 NO habrá clases, por el eclipse 🌑";
         
-        //        NSString *patronLetras = @"[A-Za-z]|[ñÑ]";
         NSString *patronLetras = @"\\w|[ñÑ]|[AEIOUaeiouÁÉÍÓÚáéíóú]";
-        
         NSString *patronVocales = @"[AEIOUaeiouÁÉÍÓÚáéíóú]";
-        //[^aeiouAEIOU]
-        
-        
-        //        NSString *patronDigitos = @"[0-9]";
         NSString *patronDigitos = @"\\d";
-        
-        //determinar espacios en blanco comas, dos puntos, caracteres, DIVERSOS
         NSString *patronEspacio = @"\\s";
+        NSString *patronSimbolos = @"[.,:;¡!¿?]";
         
         NSError *error = NULL;
         NSRegularExpression *expRegularLetras = [NSRegularExpression regularExpressionWithPattern:patronLetras options:NSRegularExpressionCaseInsensitive error:&error];
+        NSRegularExpression *expRegularVocales = [NSRegularExpression regularExpressionWithPattern:patronVocales options:NSRegularExpressionCaseInsensitive error:&error];
+        NSRegularExpression *expRegularDigitos = [NSRegularExpression regularExpressionWithPattern:patronDigitos options:NSRegularExpressionCaseInsensitive error:&error];
+        NSRegularExpression *expRegularEspacio = [NSRegularExpression regularExpressionWithPattern:patronEspacio options:NSRegularExpressionCaseInsensitive error:&error];
+        NSRegularExpression *expRegularSimbolos = [NSRegularExpression regularExpressionWithPattern:patronSimbolos options:NSRegularExpressionCaseInsensitive error:&error];
         
         NSArray *matchesLetras = [expRegularLetras matchesInString:string1 options:0 range:NSMakeRange(0, string1.length)];
-        
-        NSRegularExpression *expRegularVocales = [NSRegularExpression regularExpressionWithPattern:patronVocales options:NSRegularExpressionCaseInsensitive error:&error];
-        
         NSArray *matchesVocales = [expRegularVocales matchesInString:string1 options:0 range:NSMakeRange(0, string1.length)];
-        
-        NSRegularExpression *expRegularDigitos = [NSRegularExpression regularExpressionWithPattern:patronDigitos options:NSRegularExpressionCaseInsensitive error:&error];
-        
         NSArray *matchesDigitos = [expRegularDigitos matchesInString:string1 options:0 range:NSMakeRange(0, string1.length)];
+        NSArray *matchesEspacios = [expRegularEspacio matchesInString:string1 options:0 range:NSMakeRange(0, string1.length)];
+        NSArray *matchesSimbolos = [expRegularSimbolos matchesInString:string1 options:0 range:NSMakeRange(0, string1.length)];
         
         NSLog(@"Cadena a Analizar: %@",string1);
-        NSLog(@"Cantidad de Caracteres: %d",(int)string1.length);
-        int cantLetras = (int) matchesLetras.count;
-        int cantVocales = (int) matchesVocales.count;
-        NSLog(@"Cant. de Vocales: %d", cantVocales);
-        NSLog(@"Cant de Consonantes: %d", cantLetras-cantVocales);
-        
-        int cantDigitos = (int) matchesDigitos.count;
-        NSLog(@"Cant. de Digitos: %d", cantDigitos);
+        NSLog(@"Cantidad de Caracteres: %lu",(unsigned long)string1.length);
+        NSLog(@"Cant. de Vocales: %lu", (unsigned long)matchesVocales.count);
+        NSLog(@"Cant de Consonantes: %lu", (unsigned long)(matchesLetras.count - matchesVocales.count));
+        NSLog(@"Cant. de Digitos: %lu", (unsigned long)matchesDigitos.count);
+        NSLog(@"Cant. de Espacios en Blanco: %lu", (unsigned long)matchesEspacios.count);
+        NSLog(@"Cant. de Símbolos: %lu", (unsigned long)matchesSimbolos.count);
         
         //Archivos en Objective-C
         NSMutableString *cadenaMutable = [[NSMutableString alloc]initWithString:string1];
