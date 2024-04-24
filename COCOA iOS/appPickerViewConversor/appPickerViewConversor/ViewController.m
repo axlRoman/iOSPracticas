@@ -10,6 +10,7 @@
 @interface ViewController ()
 {
     NSArray *paises;
+    NSArray *banderas;
 }
 @end
 
@@ -20,8 +21,9 @@
     // Do any additional setup after loading the view.
     
     paises = @[@"Australia",@"China",@"Francia",@"Inglaterra",@"Japon",@"Mexico",@"UE"];
+    banderas = @[@"🇦🇺",@"🇨🇳",@"🇫🇷",@"🏴󠁧󠁢󠁥󠁮󠁧󠁿",@"🇯🇵",@"🇲🇽",@"🇪🇺"];
     
-    _tipoDeCambio = [[NSArray alloc]initWithObjects:[NSNumber numberWithFloat:1.54],[NSNumber numberWithFloat:7.27], [NSNumber numberWithFloat:6.5595], [NSNumber numberWithFloat:0.80], [NSNumber numberWithFloat:153.13], [NSNumber numberWithFloat:16.67], [NSNumber numberWithFloat:0.94], nil];
+    _tipoDeCambio = [[NSArray alloc]initWithObjects:[NSNumber numberWithFloat:1.54],[NSNumber numberWithFloat:7.27], [NSNumber numberWithFloat:6.5595], [NSNumber numberWithFloat:0.80], [NSNumber numberWithFloat:153.13], [NSNumber numberWithFloat:15.80], [NSNumber numberWithFloat:0.94], nil];
     
     self.pickerPaises.delegate = self;
     self.pickerPaises.dataSource = self;
@@ -46,7 +48,9 @@
     
     float dolares = [_cantidadDolares.text floatValue];
     float resultado = valorMoneda * dolares;
-    NSString *resultadoString = [[NSString alloc] initWithFormat:@"%.2f USD = %.2f %@",dolares,resultado,[paises objectAtIndex:row]];
+    NSString *resultadoString = [[NSString alloc] initWithFormat:@"%.2f 🇺🇸 = %.2f %@",dolares,resultado,[banderas objectAtIndex:row]];
+    
+    NSLog(@"%.2f USD = %.2f %@",dolares,resultado,[banderas objectAtIndex:row]);
     
     _etiqResultado.text = resultadoString;
     
