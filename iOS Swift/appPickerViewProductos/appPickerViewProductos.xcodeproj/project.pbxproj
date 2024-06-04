@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		74D2F0622C04DD8B002D50E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D2F0612C04DD8B002D50E8 /* AppDelegate.swift */; };
+		74D2F0642C04DD8B002D50E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D2F0632C04DD8B002D50E8 /* SceneDelegate.swift */; };
+		74D2F0662C04DD8B002D50E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D2F0652C04DD8B002D50E8 /* ViewController.swift */; };
+		74D2F0692C04DD8C002D50E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74D2F0672C04DD8B002D50E8 /* Main.storyboard */; };
+		74D2F06B2C04DD90002D50E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74D2F06A2C04DD90002D50E8 /* Assets.xcassets */; };
+		74D2F06E2C04DD90002D50E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74D2F06C2C04DD90002D50E8 /* LaunchScreen.storyboard */; };
+		74D2F07E2C04E313002D50E8 /* bici1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 74D2F0752C04E311002D50E8 /* bici1.jpg */; };
+		74D2F07F2C04E313002D50E8 /* camioneta1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 74D2F0762C04E311002D50E8 /* camioneta1.jpg */; };
+		74D2F0802C04E313002D50E8 /* BICI_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 74D2F0772C04E311002D50E8 /* BICI_2.png */; };
+		74D2F0812C04E313002D50E8 /* BICI_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 74D2F0782C04E311002D50E8 /* BICI_1.jpg */; };
+		74D2F0822C04E313002D50E8 /* camioneta11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 74D2F0792C04E312002D50E8 /* camioneta11.jpg */; };
+		74D2F0832C04E313002D50E8 /* carro1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 74D2F07A2C04E312002D50E8 /* carro1.jpg */; };
+		74D2F0842C04E313002D50E8 /* BICI_1 copy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 74D2F07B2C04E312002D50E8 /* BICI_1 copy.jpg */; };
+		74D2F0852C04E313002D50E8 /* moto1.png in Resources */ = {isa = PBXBuildFile; fileRef = 74D2F07C2C04E313002D50E8 /* moto1.png */; };
+		74D2F0862C04E313002D50E8 /* carro11.png in Resources */ = {isa = PBXBuildFile; fileRef = 74D2F07D2C04E313002D50E8 /* carro11.png */; };
+		74D2F08A2C04E4DE002D50E8 /* VW.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 74D2F0892C04E4DE002D50E8 /* VW.jpeg */; };
+		74D2F08C2C04E4E4002D50E8 /* TOYOTA.png in Resources */ = {isa = PBXBuildFile; fileRef = 74D2F08B2C04E4E3002D50E8 /* TOYOTA.png */; };
+		74D2F08E2C04E56B002D50E8 /* FORD1.png in Resources */ = {isa = PBXBuildFile; fileRef = 74D2F08D2C04E56A002D50E8 /* FORD1.png */; };
+		74D2F0902C04E765002D50E8 /* VW polo.png in Resources */ = {isa = PBXBuildFile; fileRef = 74D2F08F2C04E765002D50E8 /* VW polo.png */; };
+		74D2F0922C04F961002D50E8 /* mazda1.png in Resources */ = {isa = PBXBuildFile; fileRef = 74D2F0912C04F961002D50E8 /* mazda1.png */; };
+		74D2F0942C04F992002D50E8 /* Ram.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 74D2F0932C04F992002D50E8 /* Ram.jpeg */; };
+		74D2F0962C04FA16002D50E8 /* ram1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 74D2F0952C04FA16002D50E8 /* ram1.jpeg */; };
+		74D2F0982C04FA66002D50E8 /* ramn1.png in Resources */ = {isa = PBXBuildFile; fileRef = 74D2F0972C04FA66002D50E8 /* ramn1.png */; };
+		74D2F09A2C054D03002D50E8 /* chrysler.png in Resources */ = {isa = PBXBuildFile; fileRef = 74D2F0992C054D02002D50E8 /* chrysler.png */; };
+		74D2F09C2C054E7E002D50E8 /* honda.png in Resources */ = {isa = PBXBuildFile; fileRef = 74D2F09B2C054E7D002D50E8 /* honda.png */; };
+		74D2F09E2C0634BB002D50E8 /* mazda.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 74D2F09D2C0634BA002D50E8 /* mazda.bmp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		74D2F05E2C04DD8B002D50E8 /* appPickerViewProductos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appPickerViewProductos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		74D2F0612C04DD8B002D50E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		74D2F0632C04DD8B002D50E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		74D2F0652C04DD8B002D50E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		74D2F0682C04DD8B002D50E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		74D2F06A2C04DD90002D50E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		74D2F06D2C04DD90002D50E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		74D2F06F2C04DD90002D50E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74D2F0752C04E311002D50E8 /* bici1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bici1.jpg; path = ../../../../../Downloads/IMAGENES/bici1.jpg; sourceTree = "<group>"; };
+		74D2F0762C04E311002D50E8 /* camioneta1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = camioneta1.jpg; path = ../../../../../Downloads/IMAGENES/camioneta1.jpg; sourceTree = "<group>"; };
+		74D2F0772C04E311002D50E8 /* BICI_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BICI_2.png; path = ../../../../../Downloads/IMAGENES/BICI_2.png; sourceTree = "<group>"; };
+		74D2F0782C04E311002D50E8 /* BICI_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = BICI_1.jpg; path = ../../../../../Downloads/IMAGENES/BICI_1.jpg; sourceTree = "<group>"; };
+		74D2F0792C04E312002D50E8 /* camioneta11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = camioneta11.jpg; path = ../../../../../Downloads/IMAGENES/camioneta11.jpg; sourceTree = "<group>"; };
+		74D2F07A2C04E312002D50E8 /* carro1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = carro1.jpg; path = ../../../../../Downloads/IMAGENES/carro1.jpg; sourceTree = "<group>"; };
+		74D2F07B2C04E312002D50E8 /* BICI_1 copy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "BICI_1 copy.jpg"; path = "../../../../../Downloads/IMAGENES/BICI_1 copy.jpg"; sourceTree = "<group>"; };
+		74D2F07C2C04E313002D50E8 /* moto1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = moto1.png; path = ../../../../../Downloads/IMAGENES/moto1.png; sourceTree = "<group>"; };
+		74D2F07D2C04E313002D50E8 /* carro11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = carro11.png; path = ../../../../../Downloads/IMAGENES/carro11.png; sourceTree = "<group>"; };
+		74D2F0892C04E4DE002D50E8 /* VW.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = VW.jpeg; path = ../../../../../Downloads/VW.jpeg; sourceTree = "<group>"; };
+		74D2F08B2C04E4E3002D50E8 /* TOYOTA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TOYOTA.png; path = ../../../../../Downloads/TOYOTA.png; sourceTree = "<group>"; };
+		74D2F08D2C04E56A002D50E8 /* FORD1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FORD1.png; path = ../../../../../Downloads/FORD1.png; sourceTree = "<group>"; };
+		74D2F08F2C04E765002D50E8 /* VW polo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "VW polo.png"; path = "../../../../../Downloads/VW polo.png"; sourceTree = "<group>"; };
+		74D2F0912C04F961002D50E8 /* mazda1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mazda1.png; path = ../../../../../Downloads/mazda1.png; sourceTree = "<group>"; };
+		74D2F0932C04F992002D50E8 /* Ram.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Ram.jpeg; path = ../../../../../Downloads/Ram.jpeg; sourceTree = "<group>"; };
+		74D2F0952C04FA16002D50E8 /* ram1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ram1.jpeg; path = ../../../../../Downloads/ram1.jpeg; sourceTree = "<group>"; };
+		74D2F0972C04FA66002D50E8 /* ramn1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ramn1.png; path = ../../../../../Downloads/ramn1.png; sourceTree = "<group>"; };
+		74D2F0992C054D02002D50E8 /* chrysler.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chrysler.png; path = ../../../../../Downloads/chrysler.png; sourceTree = "<group>"; };
+		74D2F09B2C054E7D002D50E8 /* honda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = honda.png; path = ../../../../../Downloads/honda.png; sourceTree = "<group>"; };
+		74D2F09D2C0634BA002D50E8 /* mazda.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = mazda.bmp; path = ../../../../../Downloads/mazda.bmp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		74D2F05B2C04DD8B002D50E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		74D2F0552C04DD8B002D50E8 = {
+			isa = PBXGroup;
+			children = (
+				74D2F0602C04DD8B002D50E8 /* appPickerViewProductos */,
+				74D2F05F2C04DD8B002D50E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		74D2F05F2C04DD8B002D50E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				74D2F05E2C04DD8B002D50E8 /* appPickerViewProductos.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		74D2F0602C04DD8B002D50E8 /* appPickerViewProductos */ = {
+			isa = PBXGroup;
+			children = (
+				74D2F0612C04DD8B002D50E8 /* AppDelegate.swift */,
+				74D2F0632C04DD8B002D50E8 /* SceneDelegate.swift */,
+				74D2F0652C04DD8B002D50E8 /* ViewController.swift */,
+				74D2F0672C04DD8B002D50E8 /* Main.storyboard */,
+				74D2F06A2C04DD90002D50E8 /* Assets.xcassets */,
+				74D2F06C2C04DD90002D50E8 /* LaunchScreen.storyboard */,
+				74D2F06F2C04DD90002D50E8 /* Info.plist */,
+				74D2F07B2C04E312002D50E8 /* BICI_1 copy.jpg */,
+				74D2F0782C04E311002D50E8 /* BICI_1.jpg */,
+				74D2F0772C04E311002D50E8 /* BICI_2.png */,
+				74D2F0752C04E311002D50E8 /* bici1.jpg */,
+				74D2F0762C04E311002D50E8 /* camioneta1.jpg */,
+				74D2F0792C04E312002D50E8 /* camioneta11.jpg */,
+				74D2F07A2C04E312002D50E8 /* carro1.jpg */,
+				74D2F07D2C04E313002D50E8 /* carro11.png */,
+				74D2F07C2C04E313002D50E8 /* moto1.png */,
+				74D2F0892C04E4DE002D50E8 /* VW.jpeg */,
+				74D2F08B2C04E4E3002D50E8 /* TOYOTA.png */,
+				74D2F08D2C04E56A002D50E8 /* FORD1.png */,
+				74D2F08F2C04E765002D50E8 /* VW polo.png */,
+				74D2F0912C04F961002D50E8 /* mazda1.png */,
+				74D2F0932C04F992002D50E8 /* Ram.jpeg */,
+				74D2F0952C04FA16002D50E8 /* ram1.jpeg */,
+				74D2F0972C04FA66002D50E8 /* ramn1.png */,
+				74D2F0992C054D02002D50E8 /* chrysler.png */,
+				74D2F09B2C054E7D002D50E8 /* honda.png */,
+				74D2F09D2C0634BA002D50E8 /* mazda.bmp */,
+			);
+			path = appPickerViewProductos;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		74D2F05D2C04DD8B002D50E8 /* appPickerViewProductos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74D2F0722C04DD90002D50E8 /* Build configuration list for PBXNativeTarget "appPickerViewProductos" */;
+			buildPhases = (
+				74D2F05A2C04DD8B002D50E8 /* Sources */,
+				74D2F05B2C04DD8B002D50E8 /* Frameworks */,
+				74D2F05C2C04DD8B002D50E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = appPickerViewProductos;
+			productName = appPickerViewProductos;
+			productReference = 74D2F05E2C04DD8B002D50E8 /* appPickerViewProductos.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		74D2F0562C04DD8B002D50E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					74D2F05D2C04DD8B002D50E8 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 74D2F0592C04DD8B002D50E8 /* Build configuration list for PBXProject "appPickerViewProductos" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 74D2F0552C04DD8B002D50E8;
+			productRefGroup = 74D2F05F2C04DD8B002D50E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				74D2F05D2C04DD8B002D50E8 /* appPickerViewProductos */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		74D2F05C2C04DD8B002D50E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74D2F07E2C04E313002D50E8 /* bici1.jpg in Resources */,
+				74D2F0822C04E313002D50E8 /* camioneta11.jpg in Resources */,
+				74D2F0962C04FA16002D50E8 /* ram1.jpeg in Resources */,
+				74D2F09E2C0634BB002D50E8 /* mazda.bmp in Resources */,
+				74D2F0942C04F992002D50E8 /* Ram.jpeg in Resources */,
+				74D2F08A2C04E4DE002D50E8 /* VW.jpeg in Resources */,
+				74D2F0842C04E313002D50E8 /* BICI_1 copy.jpg in Resources */,
+				74D2F0832C04E313002D50E8 /* carro1.jpg in Resources */,
+				74D2F09C2C054E7E002D50E8 /* honda.png in Resources */,
+				74D2F0812C04E313002D50E8 /* BICI_1.jpg in Resources */,
+				74D2F0802C04E313002D50E8 /* BICI_2.png in Resources */,
+				74D2F0982C04FA66002D50E8 /* ramn1.png in Resources */,
+				74D2F08E2C04E56B002D50E8 /* FORD1.png in Resources */,
+				74D2F08C2C04E4E4002D50E8 /* TOYOTA.png in Resources */,
+				74D2F06E2C04DD90002D50E8 /* LaunchScreen.storyboard in Resources */,
+				74D2F0862C04E313002D50E8 /* carro11.png in Resources */,
+				74D2F07F2C04E313002D50E8 /* camioneta1.jpg in Resources */,
+				74D2F0902C04E765002D50E8 /* VW polo.png in Resources */,
+				74D2F06B2C04DD90002D50E8 /* Assets.xcassets in Resources */,
+				74D2F0692C04DD8C002D50E8 /* Main.storyboard in Resources */,
+				74D2F09A2C054D03002D50E8 /* chrysler.png in Resources */,
+				74D2F0852C04E313002D50E8 /* moto1.png in Resources */,
+				74D2F0922C04F961002D50E8 /* mazda1.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		74D2F05A2C04DD8B002D50E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74D2F0662C04DD8B002D50E8 /* ViewController.swift in Sources */,
+				74D2F0622C04DD8B002D50E8 /* AppDelegate.swift in Sources */,
+				74D2F0642C04DD8B002D50E8 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		74D2F0672C04DD8B002D50E8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74D2F0682C04DD8B002D50E8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		74D2F06C2C04DD90002D50E8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74D2F06D2C04DD90002D50E8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		74D2F0702C04DD90002D50E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		74D2F0712C04DD90002D50E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		74D2F0732C04DD90002D50E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TRDAW623BB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = appPickerViewProductos/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = RomanTech.appPickerViewProductos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		74D2F0742C04DD90002D50E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TRDAW623BB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = appPickerViewProductos/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = RomanTech.appPickerViewProductos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		74D2F0592C04DD8B002D50E8 /* Build configuration list for PBXProject "appPickerViewProductos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74D2F0702C04DD90002D50E8 /* Debug */,
+				74D2F0712C04DD90002D50E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74D2F0722C04DD90002D50E8 /* Build configuration list for PBXNativeTarget "appPickerViewProductos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74D2F0732C04DD90002D50E8 /* Debug */,
+				74D2F0742C04DD90002D50E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 74D2F0562C04DD8B002D50E8 /* Project object */;
+}

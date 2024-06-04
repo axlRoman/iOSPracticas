@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         
         // Manejo del caso especial para 0
         if num == 0 {
-            return "0"
+            return "00000000"
         }
         
         // Si el número es negativo, obtenemos su complemento a dos
@@ -51,8 +51,19 @@ class ViewController: UIViewController {
             num /= 2
         }
         
+        // Rellenamos con ceros a la izquierda si es necesario
+        while binaryString.count < 8 {
+            if number < 0{
+                binaryString = "1" + binaryString
+            }
+            if number > 0{
+                binaryString = "0" + binaryString
+            }
+        }
+        
         return binaryString
     }
+
 
     
     @IBOutlet weak var etqNumero: UILabel!
@@ -87,13 +98,26 @@ class ViewController: UIViewController {
     @IBAction func segmentSeleccionado(_ sender: UISegmentedControl) {
         let indice : Int = sender.selectedSegmentIndex
         
+        
+        
         var num : Int = Int(etqNumero.text!)!
         
-        if indice == 0 {
-            //verificar la conversion de numeros binarios negativos
-            var n = decimalToBinary(num)
+        if indice == 0{
+            if num < 0{
+                num *= -1
+                num = 256 - num
+            }
+            var n = String(num, radix: 2)
             txtSalida.text = n
+            
         }
+        
+//        
+//        if indice == 0 {
+//            //verificar la conversion de numeros binarios negativos
+//            var n = decimalToBinary(num)
+//            txtSalida.text = n
+//        }
         if indice  == 1 {
             let n = String(num, radix: 8)
             txtSalida.text = n
