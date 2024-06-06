@@ -31,7 +31,61 @@ class ViewController: UIViewController {
         tipoLuz = "ambient"
         dibujaObjeto3D()
     }
-
+    
+   
+    @IBAction func sliderLuzX(_ sender: UISlider) {
+        sliderLuzX.value = sender.value
+        dibujaObjeto3D()
+    }
+    
+    @IBAction func sliderLuzY(_ sender: UISlider) {
+        sliderLuzY.value = sender.value
+        dibujaObjeto3D()
+    }
+    @IBAction func sliderLuzZ(_ sender: UISlider) {
+        sliderLuzZ.value = sender.value
+        dibujaObjeto3D()
+    }
+    
+    
+    @IBAction func SliderCamaraX(_ sender: UISlider) {
+        sliderCamaraX.value = sender.value
+        dibujaObjeto3D()
+    }
+    @IBAction func SliderCamaraY(_ sender: UISlider) {
+        sliderCamaraY.value = sender.value
+        dibujaObjeto3D()
+    }
+    @IBAction func SliderCamaraZ(_ sender: UISlider) {
+        sliderCamaraZ.value = sender.value
+        dibujaObjeto3D()
+    }
+    
+    
+    @IBAction func segmentoTipoLuz(_ sender: UISegmentedControl) {
+        let indice : Int = segmentedLuces.selectedSegmentIndex
+        switch indice {
+        case 0:
+            tipoLuz = "ambient"
+            dibujaObjeto3D()
+        case 1:
+            tipoLuz = "directional"
+            dibujaObjeto3D()
+        case 2:
+            tipoLuz = "omni"
+            dibujaObjeto3D()
+        case 3:
+            tipoLuz = "spot"
+            dibujaObjeto3D()
+        default:
+            tipoLuz = "directional"
+            dibujaObjeto3D()
+            
+            //Agregar los 3 tipos de luz que faltan
+        }
+ 
+    }
+    
     func dibujaObjeto3D() {
         //CREAMOSLAVISTA DE LAESCENA
         
@@ -69,6 +123,8 @@ class ViewController: UIViewController {
         constraint.isGimbalLockEnabled = true
         camaraNodo.constraints = [constraint]
         
+        luzNodo.constraints = [constraint]
+        
         //PLANO O PISO
         let planoGeometria = SCNPlane(width: 50/3, height: 50/3)
         let planoNodo = SCNNode(geometry: planoGeometria)
@@ -81,6 +137,30 @@ class ViewController: UIViewController {
         //REVISION DE LOS AVANCES DE LOS PROYECTOS
         //CURVAS DE BEZIER
         //PAGINA KODECO
+        
+        let materialCubo = SCNMaterial()
+        materialCubo.diffuse.contents = UIColor.systemRed
+//        materialCubo.metalness.contents = UIColor.systemRed
+//        materialCubo.roughness.contents = UIColor.systemRed
+        geometriaCubo.materials = [materialCubo]
+        cuboNodo.position = SCNVector3(x: 0.5, y: 0, z: 0)
+        
+        //Dibujar una Espefra
+        let sphereGeometry = SCNSphere(radius: 0.5)
+        let sphereNodo = SCNNode(geometry: sphereGeometry)
+        sphereGeometry.firstMaterial?.diffuse.contents = UIColor.systemIndigo
+        sphereNodo.position = SCNVector3(x: 2.0, y: 0.0, z: 0.0)
+        
+        //COLOR Y MATERIAL PARA EL PLANO
+        let materialPlano = SCNMaterial()
+        materialPlano.diffuse.contents = UIColor.yellow
+        
+        //AGREGAMOS LOS NODOS
+        scene.rootNode.addChildNode(luzNodo)
+        scene.rootNode.addChildNode(camaraNodo)
+        scene.rootNode.addChildNode(cuboNodo)
+        scene.rootNode.addChildNode(sphereNodo)
+        scene.rootNode.addChildNode(planoNodo)
     }
 
 }
