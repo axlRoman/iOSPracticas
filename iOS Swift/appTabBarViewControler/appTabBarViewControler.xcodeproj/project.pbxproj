@@ -13,6 +13,8 @@
 		7448C6C12C10C24900C93A49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7448C6BF2C10C24900C93A49 /* Main.storyboard */; };
 		7448C6C32C10C24C00C93A49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7448C6C22C10C24C00C93A49 /* Assets.xcassets */; };
 		7448C6C62C10C24C00C93A49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7448C6C42C10C24C00C93A49 /* LaunchScreen.storyboard */; };
+		7448C6CE2C120E1A00C93A49 /* ViewControllerCurvasBezier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7448C6CD2C120E1A00C93A49 /* ViewControllerCurvasBezier.swift */; };
+		7448C6D02C1210DC00C93A49 /* FotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7448C6CF2C1210DC00C93A49 /* FotosViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		7448C6C22C10C24C00C93A49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7448C6C52C10C24C00C93A49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7448C6C72C10C24C00C93A49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7448C6CD2C120E1A00C93A49 /* ViewControllerCurvasBezier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerCurvasBezier.swift; sourceTree = "<group>"; };
+		7448C6CF2C1210DC00C93A49 /* FotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotosViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +63,9 @@
 				7448C6B92C10C24900C93A49 /* AppDelegate.swift */,
 				7448C6BB2C10C24900C93A49 /* SceneDelegate.swift */,
 				7448C6BD2C10C24900C93A49 /* ViewController.swift */,
+				7448C6CD2C120E1A00C93A49 /* ViewControllerCurvasBezier.swift */,
 				7448C6BF2C10C24900C93A49 /* Main.storyboard */,
+				7448C6CF2C1210DC00C93A49 /* FotosViewController.swift */,
 				7448C6C22C10C24C00C93A49 /* Assets.xcassets */,
 				7448C6C42C10C24C00C93A49 /* LaunchScreen.storyboard */,
 				7448C6C72C10C24C00C93A49 /* Info.plist */,
@@ -140,7 +146,9 @@
 			files = (
 				7448C6BE2C10C24900C93A49 /* ViewController.swift in Sources */,
 				7448C6BA2C10C24900C93A49 /* AppDelegate.swift in Sources */,
+				7448C6CE2C120E1A00C93A49 /* ViewControllerCurvasBezier.swift in Sources */,
 				7448C6BC2C10C24900C93A49 /* SceneDelegate.swift in Sources */,
+				7448C6D02C1210DC00C93A49 /* FotosViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
