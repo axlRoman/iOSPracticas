@@ -14,7 +14,8 @@ let colores: [String: Color] = [
     "Negro": Color(hex: "#000000"),
     "GrisClaro": Color(hex: "#EBEBEB"),
     "Vino": Color(hex: "#4C0002"),
-    "AzulMetalico": Color(hex: "#0074B1")
+    "AzulMetalico": Color(hex: "#0074B1"),
+    "Amarillo": Color(hex: "#EFDD00")
 ]
 
 // Extensión para crear colores desde hexadecimales
@@ -102,6 +103,28 @@ private let listaAutos: [Auto] = [
             "Blanco":["1B","2B","3B","4B","5B"],
             "Vino":["1R","2R","3R","4R","5R"],
             "Negro":["1N","2N","3N","4N","5N"]
+            ]),
+    Auto(nombre: "Susuki Swift",
+         especificaciones: """
+            6 bolsas de aire: 2 bolsas de aire frontales, 2 bolsas de aire laterales y 2 bolsas de aire tipo cortina.
+            Transmisión manual o automática de 6 velocidades
+            Pantalla touch a color con sistema Bluetooth®, vínculo con Smartphones Apple CarPlayTM y Android AutoTM.
+            Luz de tránsito diurno DRL. Luz de niebla
+            Espejos plegables electrónicamente con luz direccional integrada
+            Doble escape cromado
+            Cluster a color con gráfica (disponible en las dos transmisiones) y sensor de estacionamiento trasero (disponible en TA)
+            Sensores de estacionamiento traseros exclusivos para Transmisión Automática
+            Distribución electrónica de frenado (EBD)
+            Rendimiento de combustible en TA Boosterjet de 18.7 km/lt
+            Motor 4 cilindros, 1.4 lt, Boosterjet
+            Control electrónico de estabilidad ESC
+            Frenos de disco delanteros y traseros.
+            """,
+         imagenesPorColor: [
+            "Blanco":["SwiftB","SwiftB","SwiftB"],
+            "Rojo":["SwiftR","SwiftR","SwiftR"],
+            "Negro":["SwiftN","SwiftN","SwiftN"],
+            "Amarillo":["SwiftA","SwiftA","SwiftA"]
             ])
 ] // FIN DEL ARREGLO Auto
 
